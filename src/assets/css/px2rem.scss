@@ -1,0 +1,43 @@
+$baseFs:75px;
+@mixin px2rem($property,$px-values,$baseline-px:$baseFs){ 
+    $baseline-rem: $baseline-px/1rem * 1; 
+    @if type-of($px-values) == "number"{ 
+        #{$property}: $px-values / $baseline-rem; 
+    } @else { 
+        $rem-values:(); 
+        @each $value in $px-values{ 
+            @if $value == 0 or type-of($value) != "number"{ 
+                $rem-values: append($rem-values, $value ); 
+            } 
+            @else{
+                $rem-values:append($rem-values,$value/$baseline-rem);
+            }
+        } 
+        #{$property}: $rem-values; 
+    } 
+}
+
+@mixin font-dpr($font-size){
+    font-size: $font-size/2;
+ 
+    [data-dpr="2"] & {
+        font-size: $font-size*1;
+    }
+ 
+    [data-dpr="3"] & {
+        font-size: $font-size/2*3;
+    }
+}
+
+@function rem($value,$base-px:$baseFs){
+    @return $value/$base-px*1rem;
+}
+a{text-decoration:none;} 
+body,div,ul,li,a,img,span,h3,p,dd,dt,dl{margin: 0; padding: 0;}
+li{list-style: none;}
+img{ border: 0; vertical-align: top;}
+@mixin flexCenter(){
+    display:flex;
+    justify-content: center;
+    align-items:center;;
+}

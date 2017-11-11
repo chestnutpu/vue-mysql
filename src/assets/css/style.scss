@@ -1,0 +1,28 @@
+html{background:#f1f2f2;}
+.header{background:url(../assets/img/headbg.jpg);background-size:rem(8px) rem(82px);display:flex;width:rem(640px);height:rem(82px);
+	a{display:block;color:#afa9a9;border-right:1px #292424 solid;box-sizing:border-box;width:rem(96px);padding:rem(28px) rem(32px) rem(0px) rem(30px);@include font-dpr(40px);}
+	p{width:rem(454px);box-sizing:border-box;padding:rem(29px) rem(38px) rem(22px) rem(56px);border-left:1px #4e4646;border-right:1px #292424 solid;background:url(../assets/img/headpart.png) no-repeat;background-size:rem(458px) rem(124px)}
+	.telbt{width:rem(90px);border-left:1px #4e4646;padding:rem(17px) rem(21px) rem(0px) rem(24px);@include font-dpr(50px);}}
+.nav{display:flex;flex-flow:row wrap;position:fixed;left:rem(-288px);top:0;width:rem(288px);height:100%;align-content:flex-start;background:#3c3535;height:100%;
+a{
+	box-sizing:border-box;display:flex;flex:none;height:rem(96px);width:100%;align-items:center;align-content:flex-start;border-top:1px #1e1818 solid;border-bottom:#584c4c 1px solid;@include font-dpr(32px);
+	i{margin-left:rem(30px);}
+}
+}
+
+//底部
+.foot_head{width:rem(640px);height:rem(67px);background:url(../assets/img/footbg.jpg);background-size:rem(8px) rem(67px);display:flex;
+	.telcon{display:block;width:rem(320px);box-sizing:border-box;padding-left:rem(64px);border-right:1px #dadada solid;padding-right:rem(100px);background:url(../assets/img/footpart.png) no-repeat;background-size:rem(388px) rem(138px);}
+	.ouraddress{display:block;box-sizing:border-box;border-left:1px #fff solid;width:rem(320px);background:url(../assets/img/footpart.png) no-repeat;background-position:rem(-0px) rem(-69px);background-size:rem(388px) rem(138px);}
+	
+}
+.foot_change{span{display:block;width:rem(640px);height:rem(2px);background:#00afd5;border-top:1px #0b6aa6 solid;border-bottom:1px #0b6aa6 solid;}
+	p{
+		height:rem(49px);@include font-dpr(18px);width:100%;display:flex;align-items:center;line-height:rem(18px);justify-content:center;
+		i{box-sizing:border-box;width:rem(76px);height:rem(18px);border-right:1px #b5b5b5 solid;border-left:1px #f7f7f7 solid;color:#747474;font-style: normal;}
+		i:nth-child(1){border-left:0}
+		i:nth-child(2){border-right:0}
+	}
+	p:nth-child(3){height:rem(46px);background:#fff;
+		em{color:#858585;}}
+}	

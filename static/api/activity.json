@@ -1,0 +1,10 @@
+[{	"name":"最新活动",
+		"linkUrl":"/activity/newactivity"
+	},
+	{	"name":"活动预约",
+		"linkUrl":"/activity/activitylist"
+	},
+	{	"name":"往期回顾",
+		"linkUrl":"/activity/activitylist"
+	}
+]
